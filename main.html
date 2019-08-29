@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="theme-color" content="#FFB300" />
+  <title>CSCE 315 -- Project 3 -- Team 21 </title>
+  <!-- <link rel="stylesheet" href="./reset.css"> -->
+  <link rel="stylesheet" href="./styling/styles.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- <link type="text/css" href="css/themename/jquery-ui-1.7.1.custom.css" rel="Stylesheet" /> -->
+  <!-- jquery stuff -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- -->
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <!-- svg hamburger icon -->
+      <div class="menu__icon">
+        <svg width="24px" height="24px" viewBox="0 0 48 48" fill=black>
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </div>
+      <center>
+      <h1>              Overview </h1>
+      </center>
+    </div>
+
+
+
+  </header>
+
+  <!-- menu  -->
+  <nav class="menu">
+    <div class="menu__header">
+
+      <!-- <img src="images/Thermon_Logo_HD.png" height = 275px> -->
+
+    </div>
+    <ul class="menu__list">
+
+      <a href="overview.html"> <li class="currentMenuSelection"> Overview </li> </a>
+      <a href="circuitList.html"><li> Circuit List </li></a>
+      <a href="globalSettings.html"> <li> Global Settings </li> </a>
+      <a href="systemSoftware.html"> <li> System Software </li> </a>
+      <a href="importExport.html"> <li> Import/Export </li> </a>
+
+    <ul>
+  </nav>
+
+<div class="main-container">
+
+    <!-- overlay  -->
+    <div class="menu__overlay"></div>
+
+    <div class="main-container">
+      <div class="sample-container">
+
+
+
+        <div class="myBoxOverview">
+          <center>
+            <div class="overviewOffButton">
+              <!-- <img src="images/Overview/overviewOffButton.png" height= 90px> -->
+            </div>
+          </center>
+
+          <center>
+            <div class="overviewPointer">
+              <div id="draggable" >
+                <!-- <img src="images/Overview/overviewWheelPointerx.png"> -->
+              </div>
+            </div>
+          </center>
+
+          <div class="overviewTemperature">
+            <!-- <img src="images/Overview/overviewTemperature.png"> -->
+          </div>
+
+
+        <p class="circuitIdentification"> CDX5-4JF-<span id="circuitNumber"></span></p>
+
+        <center>
+          <div class="overviewTempSetPoint">
+            <p > Set Point <br> <span id="tempSetPoint"></span> ºF </p>
+          </div>
+        </center>
+
+        <div class="overviewTempFarenheit">
+          <p >  ºF </p>
+        </div>
+
+        <div class="overviewCurrentTemp">
+          <span id="tempCurrent"></span>
+        </div>
+
+        <center>
+          <div class="OverviewInfoWheel">
+            <!-- <span class="dotSpace"> </span> -->
+            <!-- <img src="images/Overview/overviewInfoWheel.png" height = 395px> -->
+          </div>
+        </center>
+
+        <center>
+           <p class="boldCircuitNumber"> <span id="circuitNumber2"></span>  </p>
+           <!-- <p class="boldCircuitNumber"> <span id="circuitNumber"></span> </p> -->
+           <p class="ciruitSelectorText"> CIRCUIT </p>
+
+                <!-- <img  class="overviewCircuitSelectorLeft" src="images/Overview/overviewCircuitSelectorLeftCropped.png" height = 100px> -->
+                <!-- <img  class="overviewCircuitSelectorRight" src="images/Overview/overviewCircuitSelectorRightCropped.png" height = 100px> -->
+
+        </center>
+          <p>  </P>
+
+            <!-- <footer> ©2018 </footer> -->
+          </div>
+
+          <!-- put the knob here -->
+          <!-- <input type="text" class="rotarySwitch" value="0"> -->
+
+          <div class="knobBox">
+            <input type="text" class="rotarySwitch"  value="0" >
+          </div>
+
+        </div>
+
+
+    		<!--<footer> ©2018 </footer>-->
+    	</div></div>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./app.js"></script> -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./scripts/scripts.js">  </script>
+    <!-- <script src="overviewScripts.js">  </script> -->
+
+    <!-- -->
+    <!-- -->
+
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- <script src="jquery.rotaryswitch.js"></script> -->
+
+
+
+    <!-- -->
+    <script>
+    console.log("The last of the scripts have been attempted to load");
+    // console.log("ok whats the deal here?");
+    </script>
+    <!-- -->
+
+  </body>
+  </html>

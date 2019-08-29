@@ -1,0 +1,235 @@
+body {
+  font-family: 'Roboto',Helvetica,Arial,sans-serif, courier;
+
+}
+
+header {
+  font: courier;
+  padding: 0px 3px 0 0;
+  height: 56px;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  background-color:  white;
+  position: fixed;
+  top: 0;
+  z-index: 98;
+}
+
+.header h1 {
+  font: courier;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 58px;
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  width: 30%;
+  box-shadow: 1px;
+  border-radius: 4px;
+  //box-shadow: 5px 5px #888888;
+  box-shadow: 0px 0px 45px -11px rgba(0,0,0,0.75);
+  font-family: "Courier New";
+
+}
+.mainBody{
+  background-image: url("../graphics/backgroundSmaller.png"); /* The image used */
+  background-color: #999999;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer {
+  font: courier;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #800000;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  padding: 25px 0px 0px 0px;
+  overflow-y:scroll;
+}
+
+.logo {
+  //position:absolute;
+  top:20%;
+  width:60%;
+  display: block;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.logoText{
+  position:absolute;
+  top:25%;
+  width:50%;
+  display: block;
+  padding-right: 0px;
+  padding-top: -20px;
+  margin-top: 30px;
+  margin-left: 25%;
+  margin-right: auto;
+  z-index: 5  ;
+}
+
+.logoDetailsPage{
+  position:absolute;
+  height: 115px;
+  margin-left: 25px;
+}
+
+.logoContextPage{
+  position:fixed;
+  height: 80px;
+  margin-left: 25px;
+}
+
+.selectContextTitle {
+  //position:absolute;
+  height: 200px;
+  display: block;
+    margin: 0 auto;
+
+}
+
+.infoBox {
+  position: absolute;
+  height: 30%;
+  width: 800px;
+  background-color: #80bcbc;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px #79fcfc, 0 0 0 5px #ffffffeb;
+  margin-top: 130px;
+  margin-left: 70px;
+
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  //white-space: nowrap;
+  overflow-y:scroll;
+}
+.queryTextBox {
+  position: absolute;
+  height: 10%;
+  //width: 30%;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #80bcbc;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px #79fcfc, 0 0 0 5px #ffffffeb;
+  margin-top: 10px;
+  margin-left: 400px;
+  font-family: "Impact";
+  //font: courier;
+  font-size: 48px;
+}
+.contextBlockholder{
+  margin: auto;
+  text-align: center;
+
+  margin-top: 150px;
+  //margin-left: 800px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom:100px;
+
+}
+.contextBlock {
+  //height: 30%;
+  //width: 10%;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 20px;
+  background-color: #80bcbc;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px #79fcfc, 0 0 0 5px #ffffffeb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Courier New";
+  font-size: 24px;
+}
+.contextBlock:hover{
+  box-shadow: 0 15px 80px #b342f4, 0 0 0 5px #ffffffeb;
+}
+
+.wikipediaLogoLinker {
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 25%;
+  height: 100px;
+  z-index: 5;
+}
+.imageBox {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #80bcbc;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px #79fcfc, 0 0 0 5px #ffffffeb;
+  margin-top: 130px;
+  margin-left: 925px;
+  font-family: "Impact";
+  //font: courier;
+  font-size: 48px;
+}
+#image1{
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  display:block;
+  margin:auto;
+  margin-left: 1%;
+  margin-top: 2%;
+  //padding-top: 10px;
+  //padding-bottom: 10px;
+  //padding-left: 15px;
+  //padding-right: 10px;
+  border-radius: 10px;
+}
+#scrollBar {
+  //id for query info box with custom scrollbar
+}
+#scrollBar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+#scrollBar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+#scrollBar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+/* #testButton1{
+  padding: 0px 0px 0px 0px;
+  width:20%;
+  height: 100px;
+  box-shadow: 0px 0px 45px -11px rgba(0,0,0,0.75);
+  font-family: "Courier New";
+  position: absolute;
+  top: 65%;
+
+} */
